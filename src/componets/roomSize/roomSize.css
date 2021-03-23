@@ -1,0 +1,14 @@
+.tagRoom {
+    width: 80%;
+    padding: 5px 0;
+    margin-bottom: 10px;
+    background-color: #FFD66B;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.tagRoom p{
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 0;
+}

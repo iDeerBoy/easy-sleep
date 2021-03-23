@@ -1,0 +1,18 @@
+.tagCountry {
+    width: 80%;
+    padding: 5px 0;
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: #FFD66B;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.tagCountry p{
+    text-align: center;
+    color: #fff;
+    font-size: 16px;    
+    padding: 0;
+    margin-bottom: 0;
+}

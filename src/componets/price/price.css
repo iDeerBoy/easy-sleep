@@ -1,0 +1,14 @@
+.tagPrice {
+    width: 80%;
+    padding: 5px 12.5%;
+    margin-bottom: 35px;
+    border: 1px solid #FFD66B;
+    text-align: center;
+    color: #FFD66B;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.dollarIcon {
+    margin: 0 5%;
+}

@@ -1,0 +1,21 @@
+.header {
+    padding: 30px 15px 30px 20%;
+    background-color: #654062;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .header-txt h1{
+    font-size: 60px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.header .header-txt span{
+    color: #FF9D72;
+}
+
+.header img{
+    width: 337px;
+}

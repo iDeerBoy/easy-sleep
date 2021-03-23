@@ -1,0 +1,16 @@
+.reservation {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #654062;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.reservation:hover{
+    background-color: #FF9D72;
+}

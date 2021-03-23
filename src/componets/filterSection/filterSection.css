@@ -1,0 +1,11 @@
+.filters {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #FFD66B;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}

@@ -1,0 +1,8 @@
+.results {
+    width: 100%;
+    background-color: #F4F4F4;
+    padding: 60px 10% 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
