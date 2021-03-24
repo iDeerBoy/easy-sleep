@@ -8,7 +8,7 @@ function CountryFilter({filterByCountry}){
         let updateHotelsList = hotelsData.filter((value) =>{
             return e.target.value === "Todos los países"
             ? value 
-            : value === e.target.value
+            : value.country === e.target.value
         });
         filterByCountry(updateHotelsList)
     }
