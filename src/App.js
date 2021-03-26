@@ -8,16 +8,32 @@ import { hotelsData } from "./data/data";
 function App() {
 
   let [hotelList, setHotelList] = useState(hotelsData);
+  let [stateCountry, setStateCountry] = useState("Todos los países");
+  let [statePrice, setStatePrice] = useState("Cualquier precio");
+  let [stateSize, setStateSize] = useState("Todos los tamaños")
 
-  function filterCountry(newList) {
+  function filterCountry(newList, value) {
     setHotelList(newList);
+    setStateCountry(value)
+    console.log(stateCountry)
   }
 
-  function filterByPrice(newList){
+  function filterByPrice(newList, value){
     setHotelList(newList);
+    setStatePrice(value)
+    console.log(statePrice)
   }
 
-  function filterBySize(newList){
+  function filterBySize(newList, value){
+    setHotelList(newList)
+    setStateSize(value)
+  }
+
+  function filterByDateIn(newList){
+    setHotelList(newList)
+  }
+
+  function filterByDateOut(newList){
     setHotelList(newList)
   }
 
@@ -28,6 +44,12 @@ function App() {
         filterByCountry={filterCountry}
         filterByPrice={filterByPrice}
         filterBySize={filterBySize}
+        filterByDateIn={filterByDateIn}
+        filterByDateOut={filterByDateOut}
+
+        //Estados Gobales
+        stateCountry={stateCountry}
+        statePrice={statePrice}
       />
       <Results list={hotelList}/>
     </div>

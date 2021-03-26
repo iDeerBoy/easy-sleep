@@ -2,17 +2,20 @@ import '../generalStyles/generalStyles.css';
 import '../generalStyles/stylesInputs.css';
 import {hotelsData} from '../../data/data';
 
-function PriceFilter({filterByPrice}){
+function PriceFilter({filterByPrice, stateCountry}){
 
-    function filter(e){
-        let updateHotelsList = hotelsData.filter((value)=>{
-            return e.target.value === "Cualquier precio"
+    function filter(e) {
+        let updateHotelsList = hotelsData.filter((value) => {
+          return e.target.value === "Cualquier precio"
             ? value
-            :value.price == e.target.value
-        });
-        
-        filterByPrice(updateHotelsList)
-    }
+            : value.price === parseInt(e.target.value, 10);
+        }).filter((value) => {
+            return stateCountry === "Todos los países"
+            ? value
+            : value.country === stateCountry;
+        })
+        filterByPrice(updateHotelsList, e.target.value);
+      }
 
     return (
         <div className="input-container">

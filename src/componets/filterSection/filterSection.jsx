@@ -7,15 +7,29 @@ import PriceFilter from '../priceFilter/priceFilter';
 import RoomSizeFilter from '../roomSizeFilter/roomSizeFilter';
 import ClearFilters from '../clearFilters/clearFilters'
 
-function FilterSection({ filterByCountry, filterByPrice, filterBySize }){
+function FilterSection({ filterByCountry, filterByPrice, filterBySize, filterByDateIn, filterByDateOut, stateCountry, statePrice }){
 
     return (
         <div className="filters">
-                <DateIn />
-                <DateOut />
-                <CountryFilter filterByCountry={filterByCountry}/>
-                <PriceFilter filterByPrice={filterByPrice}/>
-                <RoomSizeFilter filterBySize={filterBySize}/>
+                <DateIn 
+                    filterByDateIn={filterByDateIn}
+                />
+                <DateOut 
+                    filterByDateOut={filterByDateOut}
+                />
+                <CountryFilter 
+                    filterByCountry={filterByCountry}
+                    statePrice={statePrice}
+                />
+                <PriceFilter 
+                    filterByPrice={filterByPrice}
+                    stateCountry={stateCountry}
+                />
+                <RoomSizeFilter 
+                    filterBySize={filterBySize}
+                    stateCountry={stateCountry}
+                    statePrice={statePrice}
+                />
                 <ClearFilters />
         </div>
     )
