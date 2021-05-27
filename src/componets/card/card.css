@@ -1,3 +1,80 @@
+.card {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.card img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  color: #ff9d72;
+  padding: 0 5% 0 5%;
+  margin-bottom: 10px;
+}
+
+.card p {
+  display: block;
+  font-size: 14px;
+  color: #4f4f4f;
+  text-align: center;
+  padding: 0 5%;
+  margin-bottom: 20px;
+}
+
+.tagsInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 48%;
+    position: relative;
+  }
+
+  .card h2 {
+    text-align: left;
+    padding: 0 10% 0 10%;
+  }
+
+  .card p {
+    text-align: left;
+    padding: 0 10% 0 10%;
+    margin-bottom: 220px;
+  }
+  .tagsInfo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  .card {
+    width: 31%;
+    margin: 0 1% 35px;
+  }
+
+  .card h2 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 23%;
+  }
+}
+
+/*1920
 .card{
     width: 22%;
     background-color: #fff;
@@ -33,3 +110,4 @@
     flex-direction: column;
     align-items: center;
 }
+*/

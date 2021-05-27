@@ -1,11 +1,17 @@
-.filters {
-    width: 100%;
-    padding: 15px 0;
-    background-color: #FFD66B;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+.filters form {
+  width: 100%;
+  padding: 10px 5%;
+  background-color: #ffd66b;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media screen and (min-width: 1220px) {
+  .filters {
     position: sticky;
     top: 0;
     z-index: 10;
+  }
 }

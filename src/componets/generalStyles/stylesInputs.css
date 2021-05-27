@@ -1,31 +1,62 @@
-.input-container{
-    margin: 0 12.5px;
+.input-container {
+  margin: 5px 10px;
 }
 
+.input-container h4 {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+  color: #654062;
+  margin-bottom: 2px;
+}
 
-.input-container h4{
+.input-container input,
+.input-container select {
+  width: 260px;
+  height: 35px;
+  padding: 0 25px;
+  border-radius: 20px;
+  border: none;
+  color: #4f4f4f;
+  outline: none;
+  font-size: 14px;
+}
+
+.clear {
+  display: none;
+  position: relative;
+}
+
+.clear input {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  opacity: 0;
+}
+
+.clear:hover {
+  background-color: #ff9d72;
+}
+
+@media screen and (min-width: 768px) {
+  .input-container h4 {
     font-size: 14px;
-    font-weight: 400;
     text-align: center;
-    color: #654062;
     margin-bottom: 5px;
-}
+  }
 
-.input-container input, .input-container select{
-    width: 260px;
+  .input-container input,
+  .input-container select {
     height: 50px;
-    padding: 0 25px;
-    border-radius: 20px;
-    border: none;
-    text-align: center;
-    color: #4F4F4F;
-    outline: none;
     font-size: 16px;
-}
+    text-align: center;
+  }
 
-.clear{
+  .clear {
+    display: block;
     width: 50px;
     height: 50px;
+    margin: 5px 10px;
     background-color: #654062;
     border-radius: 100%;
     display: flex;
@@ -33,9 +64,49 @@
     align-items: center;
     font-size: 20px;
     color: #fff;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
+  }
 }
 
-.clear:hover{
-    background-color: #FF9D72;
+/*1920
+.input-container {
+  margin: 0 12.5px;
 }
+
+.input-container h4 {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #654062;
+  margin-bottom: 5px;
+}
+
+.input-container input,
+.input-container select {
+  width: 260px;
+  height: 50px;
+  padding: 0 25px;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  color: #4f4f4f;
+  outline: none;
+  font-size: 16px;
+}
+
+.clear {
+  width: 50px;
+  height: 50px;
+  background-color: #654062;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.clear:hover {
+  background-color: #ff9d72;
+}*/

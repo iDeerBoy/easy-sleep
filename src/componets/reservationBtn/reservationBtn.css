@@ -1,16 +1,108 @@
 .reservation {
-    width: 100%;
-    padding: 10px 0;
-    background-color: #654062;
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 22px;
-    font-weight: 400;
-    text-align: center;
-    color: #fff;
-    transition: all .3s ease;
-    cursor: pointer;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #654062;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.reservation:hover{
-    background-color: #FF9D72;
+.reservation:hover {
+  background-color: #ff9d72;
+}
+
+.reservcationActive {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reservcationActive .reservationSelected {
+  width: 80%;
+  padding: 20px 3% 30px;
+  background-color: #fff;
+  border: 3px solid #ffd66b;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.reservcationActive .reservationSelected div {
+  width: 100%;
+}
+
+.reservcationActive .reservationSelected h4 {
+  width: 100%;
+  color: #654062;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.reservcationActive .reservationSelected div img {
+  display: none;
+}
+
+.reservcationActive .reservationSelected div h2 {
+  color: #ff9d72;
+  padding: 0 10%;
+}
+
+.reservcationActive .reservationSelected div p {
+  margin-bottom: 15px;
+}
+
+.reservcationActive .reservationSelected div p:nth-child(4),
+.reservcationActive .reservationSelected div p:nth-child(5) {
+  color: #ff9d72;
+  margin-bottom: 5px;
+}
+
+.reservcationActive .reservationSelected span {
+  color: #654062;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 1220px) {
+  .reservcationActive .reservationSelected {
+    width: 70%;
+    padding: 60px 3% 30px;
+  }
+
+  .reservcationActive .reservationSelected div {
+    text-align: left;
+    width: 50%;
+  }
+
+  .reservcationActive .reservationSelected h4 {
+    padding: 0 10%;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .reservcationActive .reservationSelected div img {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .reservcationActive .reservationSelected {
+    width: 50%;
+    padding: 80px 5% 50px;
+  }
 }
