@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/easy-sleep/static/css/main.038b4e6b.chunk.css",
+    "main.js": "/easy-sleep/static/js/main.bcdae983.chunk.js",
+    "main.js.map": "/easy-sleep/static/js/main.bcdae983.chunk.js.map",
+    "runtime-main.js": "/easy-sleep/static/js/runtime-main.acfec16a.js",
+    "runtime-main.js.map": "/easy-sleep/static/js/runtime-main.acfec16a.js.map",
+    "static/js/2.a6a8b825.chunk.js": "/easy-sleep/static/js/2.a6a8b825.chunk.js",
+    "static/js/2.a6a8b825.chunk.js.map": "/easy-sleep/static/js/2.a6a8b825.chunk.js.map",
+    "static/js/3.8f538181.chunk.js": "/easy-sleep/static/js/3.8f538181.chunk.js",
+    "static/js/3.8f538181.chunk.js.map": "/easy-sleep/static/js/3.8f538181.chunk.js.map",
+    "index.html": "/easy-sleep/index.html",
+    "static/css/main.038b4e6b.chunk.css.map": "/easy-sleep/static/css/main.038b4e6b.chunk.css.map",
+    "static/js/2.a6a8b825.chunk.js.LICENSE.txt": "/easy-sleep/static/js/2.a6a8b825.chunk.js.LICENSE.txt",
+    "static/media/city.4ace3320.svg": "/easy-sleep/static/media/city.4ace3320.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.acfec16a.js",
+    "static/js/2.a6a8b825.chunk.js",
+    "static/css/main.038b4e6b.chunk.css",
+    "static/js/main.bcdae983.chunk.js"
+  ]
+}
